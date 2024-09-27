@@ -30,5 +30,10 @@ grade_midterms_weight = ((grade_midterm1 + grade_midterm2)/2) * 0.25
 grade_final_exam_weight = grade_final_exam * 0.18
 grade_midterms_final_preperation_weight = grade_midterms_final_preperation * 0.06
 
-#Final calculation
-Final_grade = completed_labs_weight + completed_quizzes_weight + grade_assignments_weight
+#final calculation with the weight included and final grade variable assignment
+final_grade = completed_labs_weight + completed_quizzes_weight + grade_assignments_weight + grade_midterms_weight + grade_final_exam_weight + grade_midterms_final_preperation_weight
+
+
+#final output rounded to the nearest hundredth place
+
+print("Your grade is: " + str(round(final_grade, 2)))
